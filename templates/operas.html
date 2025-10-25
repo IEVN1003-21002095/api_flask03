@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="col-md-6 p-4 border rounded bg-light shadow-sm">
+        <h2 class="text-center mb-4">Operaciones Básicas</h2>
+        <form method="post" action="/operas">
+            <div class="form-group mb-3 container-centered">
+                <label for="n1" class="form-label">Número 1:</label>
+                <input type="number" class="form-control" id="n1" name="n1" required>
+            </div>
+            <div class="form-group mb-4 container-centered">
+                <label for="n2" class="form-label">Número 2:</label>
+                <input type="number" class="form-control" id="n2" name="n2" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-dark px-4">Calcular</button>
+            </div>
+        </form>
+    </div>
+    <h1>Resultado:</h1>
+    <h2>{{ resultado }}</h2>
+</div>
+
+{% endblock %}
