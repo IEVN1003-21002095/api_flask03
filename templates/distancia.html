@@ -1,5 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Calculo de Distancia</h1>
-
+    {% import "_macros.html" as macro %}
+    <h1>Distancia</h1>
+    <form class="form-control" action="" method="post">
+        {{ macro.campo1("x1","Ingrese el punto 1","number") }}
+        {{ macro.campo1("y1","Ingrese el punto 2","number") }}
+        {{ macro.campo1("x2","Ingrese el punto 3","number") }}
+        {{ macro.campo1("y2","Ingrese el punto 4","number") }}
+    </form>
+    
 {% endblock %}
