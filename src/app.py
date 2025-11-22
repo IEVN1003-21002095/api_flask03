@@ -118,6 +118,8 @@ def eliminar_alumno(mat):
             return jsonify({'mensaje': "Alumno no encontrado.", 'exito': False})
     except Exception as ex:
         return jsonify({'mensaje': "Error {0} ".format(ex), 'exito': False})
+
+    
 def pagina_no_encontrada(error):
     return "<h1>La página que intentas buscar no existe...</h1>", 404
 
